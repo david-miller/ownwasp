@@ -24,6 +24,7 @@ def trigger_token( url, session_cookie, ip )
 end
 
 def try( url, pepper, ip, time, session_cookie )
+  #depending on time zone settings you might need to adjust this
   localtime = time.new_offset('-05:00')
   hash_string = ip + pepper + localtime.strftime("%Y%m%d%I%M%S")
   awesome_hash = Digest::MD5.hexdigest( hash_string ) 
