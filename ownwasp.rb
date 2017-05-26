@@ -1,4 +1,7 @@
 #!/usr/bin/ruby
+#
+# exploit poor token generation in the owasp ctf 
+# project to solve all challenges
 require 'date'
 require 'digest'
 require 'net/http'
